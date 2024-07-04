@@ -29,3 +29,12 @@ query GetTransaction($id:ID!){
 }
 
 `;
+
+export const GET_TRANSACTION_STATISTICS=gql`
+query GetTransactionStatistics{
+    categoryStatistics{
+        category,
+        totalAmount
+    }
+}
+`
